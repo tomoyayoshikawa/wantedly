@@ -1,41 +1,7 @@
 !!!
 
 .header
-  .header__logo
-    %a{href: ""}
-      %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
-  .header__menu
-    %ul
-      %li
-        %a{href: ""} 募集を見る
-      %li
-        %a{href: ""} フィードをみる
-      %li
-        %a{href: ""} プロフィール
-      %li
-        %a{href: ""} ツール
-      %li
-        %form.search{"accept-charset" => "UTF-8", :action => "/search", :method => "get"}
-          %span{:style => "position: relative; display: inline-block; direction: ltr;"}
-            %input.input{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "人や会社、募集を検索", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
-      %li
-        #icon
-          %i.fa.fa-search
-
-  .header__profile
-    %a{href: ""} 
-      %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
-  .header__status
-    %ul
-      %li
-        %a{href: ""}
-          %i.fa.fa-commenting-o
-      %li
-        %a{href: ""}
-          %i.fa.fa-user-o
-      %li
-        %a{href: ""}
-          %i.fa.fa-bell
+  = render '/offers/user_header'
 .contents
   .contents__box
     .main-contents
@@ -215,9 +181,9 @@
           %li 英語
           %li 日本語
       .footer__contents__right-contents__message
-        %input#text{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "wantedlyに意見を送る", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+        %input#text{:name => "message",:placeholder => "wantedlyに意見を送る"}
       .footer__contents__right-contents__send
-        %input#send{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "送信", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+        %input#send{:type => "submit",:value => "送信"}
 
 
 
