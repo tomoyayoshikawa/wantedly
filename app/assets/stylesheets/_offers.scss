@@ -294,7 +294,6 @@
         &__details {
           height: 215px;
           width: 475px;
-          padding-left: 20px;
           box-sizing: border-box;
           padding-bottom: 15px;
           &__job {
@@ -303,6 +302,7 @@
             font-size: 12px;
             font-weight: 600;
             vertical-align: middle;
+            border: 1px solid #00A4BB;
             margin: 0;
             padding: 0;
           }
