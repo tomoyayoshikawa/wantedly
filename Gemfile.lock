@@ -68,6 +68,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    device (0.0.0)
     erb2haml (0.1.5)
       html2haml
     erubis (2.7.0)
@@ -212,6 +213,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano3-unicorn
   coffee-rails (~> 4.2)
+  device
   erb2haml
   font-awesome-rails
   haml-rails
