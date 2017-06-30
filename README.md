@@ -44,7 +44,7 @@
 |:--:|:--:|:--:|
 |company_id|references :company, foreign_key: true||
 |title|string|null: false|
-|image|string||
+|image|string|null: false|
 |body|text||
 
 ### Association
