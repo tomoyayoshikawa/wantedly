@@ -60,6 +60,91 @@
     padding: 10px;
     margin: 0;
     position: relative;
+    .hidden-menu {
+      width: 282px;
+      height: 340px;
+      display: none;
+      position: absolute;
+      right: 10px;
+      border: 1px solid #9DA0A4;
+      z-index: 2;
+      background-color: #fff;
+      &__account {
+        width: 280px;
+        height: 84px;
+        border-bottom: 1px solid #9DA0A4;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            margin: 0;
+            padding: 0;
+            .account-link {
+              width: 280px;
+              height: 64px;
+              .name-area {
+                width: 99px;
+                height: 36px;
+                margin-left: 20px;
+                padding-top: 24px;
+                .name-profile {
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: #24282A;
+                }
+                .name-edit {
+                  display: block;
+                  font-size: 11px;
+                  font-weight: 400;
+                  color: #9DA0A4;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__visit {
+        width: 280px;
+        height: 89px;
+        border-bottom: 1px solid #9DA0A4;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            padding-top: 15px;
+            margin-left: 40px;
+            .apply-visit {
+              text-decoration: none;
+              font-size: 14px;
+              font-weight: 600;
+              color: #24282A;
+            }
+          }
+        }
+      }
+      &__user {
+        width: 280px;
+        height: 165px;
+        border-bottom: 1px solid #9DA0A4;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li {
+            padding-top: 15px;
+            margin-left: 40px;
+            .user-menu {
+              text-decoration: none;
+              font-size: 14px;
+              font-weight: 600;
+              color: #24282A;
+            }
+          }
+        }
+      }
+    }
   }
   &__status {
     line-height: 60px;

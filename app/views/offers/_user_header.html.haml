@@ -18,8 +18,33 @@
   %i.fa.fa-search
 
 .header__profile
-  %a{href: ""}
-    %img.photo{:alt => "Wantedly", :height => "44px", :src => "/assets/man.png", :width => "44px", :margin => "0"}/
+  %img.photo{:alt => "Wantedly", :height => "44px", :src => "/assets/man.png", :width => "44px", :margin => "0"}/
+  #modal-overlay
+    .hidden-menu
+      .hidden-menu__account
+        %ul
+          %li
+            %a.account-link
+              .name-area
+                .name-profile
+                  = current_user.name
+                .name-edit プロフィール編集
+      .hidden-menu__visit
+        %ul
+          %li
+            %a.apply-visit{:href => "/users/#{current_user.id}"} 応募した企業
+          %li
+            %a.apply-visit{:href => "/"} 保存した募集
+      .hidden-menu__user
+        %ul
+          %li
+            %a.user-menu{:href => "/"} フォローしている会社
+          %li
+            %a.user-menu{:href => "/"}友達を招待
+          %li
+            %a.user-menu{:href => "/"}アカウント設定
+          %li
+            = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'user-menu'
 .header__status
   %ul
     %li
