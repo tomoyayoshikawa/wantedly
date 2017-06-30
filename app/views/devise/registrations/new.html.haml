@@ -1,0 +1,32 @@
+.header
+  %p.header-logo
+    %a{:href => "/"}
+      %img.logo{:src => "footer-logo-wantedly.png"}
+
+.registrations
+  .registrations__main
+    .registrations__main-left
+      %h1 30秒でアカウント登録（無料です）
+      .registrations__main-left__sign_up
+        .registrations__main-left__sign_up__select
+        = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+          .field-label
+            = f.label "名前"
+          .field-input
+            = f.text_field :name
+          .field-label
+            = f.label "E-mail"
+          .field-input
+            = f.text_field :email
+          .field-label
+            = f.label "Password"
+          .field-input
+            = f.text_field :password
+
+          .registrations__main-left__sign_up__select-bottom
+            = f.check_box :validate
+            利用規約とプライバシーポリシーに同意します。
+            .action
+              = f.submit "登録する", class: 'registration-btn'
+          %p.link Emailでのログインはこちら
+

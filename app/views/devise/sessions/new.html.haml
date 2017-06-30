@@ -1,0 +1,37 @@
+.menu-wrapper
+.info-bar
+  %p Wantedlyは、月間150万人が利用する国内最大級のビジネスSNSです
+%header
+  .header-logo
+    %img.logo{:src => "/assets/wantedly.logo.png"}
+  .header-form
+    .field-input
+    %input#search{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "人や会社、募集を検索", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+  .field-right
+    %ul
+      %li
+        %a#header-sign_up{:href => "/users/sign_up"} 新規会員登録
+      %li
+        %a#header-recruiter{:href => "/about/list"} 採用担当者の方はこちら
+      %li
+        %a#header-signup.data-qtip.header-login-button.facebook{"aria-describedby" => "qtip-0", "data-hasqtip" => "0", "data-qtip-at" => "bottom center", "data-qtip-my" => "top right", "data-qtipv" => "Facebookのアカウントで登録・ログインしていただきます。Wantedlyが許可無くウォール等へ投稿することはありません。", :href => "https://www.wantedly.com/user/auth/facebook?ref=header_signup"}
+      %li
+        %a.log_in{:href => "#login_modal"} ログイン
+.field-main
+  .field-main__center
+    %h1.contents ログイン
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field-label
+        = f.label "メールアドレス"
+        .field-input
+          = f.email_field :email
+      .field-label
+        = f.label "パスワード"
+        .field-input
+          = f. password_field :password
+      %a.sentence{:href => "/user/password/new", :style => "font-size: 12px;"} パスワードを忘れた場合はこちら
+      .actions
+        = f.submit "ログイン", class: 'btn'
+      .actions
+        = f.submit "戻る", class: 'return-btn'
+%footer

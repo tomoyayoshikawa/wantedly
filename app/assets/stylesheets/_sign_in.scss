@@ -1,0 +1,160 @@
+.info-bar {
+  width: 1440px;
+  height: 52px;
+  position: relative;
+  background: #00A4BB;
+  text-align: center;
+  line-height: 1;
+  overflow: hidden;
+  color: #fff;
+}
+header {
+  width: 1440px;
+  height: 60px;
+  .header-logo {
+    float: left;
+  }
+  .header-form {
+    width: 392px;
+    height: 59px;
+    display: inline;
+    float: left;
+    #search {
+      width: 360px;
+      height: 36px;
+      margin: 11px 0px 10px 32px;
+      padding: 0px 35px 0 10px;
+      box-sizing: border-box;
+      font-weight: 400;
+      line-height: 16px;
+      border: none;
+      color: #45494B;
+      background-color: #f9f9f9;
+      font-size: 14px;
+    }
+  }
+  .field-right {
+    width: 480px;
+    height: 50px;
+    float: right;
+    ul {
+      width: 485px;
+      height: 50px;
+      li {
+        float: left;
+        line-height: 40px;
+        margin: 10px 0 0 10px;
+        list-style: none;
+        #header-sign_up {
+          font-size: 14px;
+          color: #00A4BB;
+          padding: 0 10px;
+          display: block;
+          text-decoration: none;
+        }
+        #header-recruiter {
+          font-size: 14px;
+          color: #00A4BB;
+          padding: 0 10px;
+          display: block;
+          text-decoration: none;
+        }
+      }
+      .log_in {
+        color: #006F8E;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        float: right;
+      }
+    }
+  }
+}
+.field-main {
+  width: 1440px;
+  height: 466px;
+
+  &__center {
+    width: 980px;
+    height: 336px;
+    margin: 0 auto;
+
+    .contents {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+      .field-label {
+
+        label {
+          display: block;
+          margin-bottom: 4px;
+          font-size: 12px;
+          color: #D7DBDF;
+        }
+        #user_email {
+          border: 1px solid #D7DBDF;
+          width: 282px;
+          height: 42px;
+        }
+        #user_password {
+          border: 1px solid #D7DBDF;
+          width: 282px;
+          height: 42px;
+        }
+        #campany_email {
+          border: 1px solid #D7DBDF;
+          width: 282px;
+          height: 42px;
+        }
+        #campany_password {
+          border: 1px solid #D7DBDF;
+          width: 282px;
+          height: 42px;
+        }
+      }
+      .sentence {
+        color: #006F8E;
+        text-decoration: none;
+      }
+      .actions {
+        width: 280px;
+        height: 42px;
+
+        .btn {
+          width: 280px;
+          height: 42px;
+          line-height: 42px;
+          margin-top: 15px;
+          font-size: 14px;
+          background: #00A4BB;
+          border: none;
+          color: #fff
+        }
+      }
+      .actions {
+        width: 280px;
+        height: 42px;
+
+        .return-btn {
+          margin-top: 40px;
+          background: #f5f5f5;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          height: 42px;
+          width: 280px;
+          line-height: 38px;
+          font-size: 14px;
+          font-weight: 600;
+          color: #45494B;
+          text-align: center;
+        }
+      }
+  }
+}
+footer {
+  width: 1440px;
+  height: 774px;
+  background: #f0f4f5;
+}
