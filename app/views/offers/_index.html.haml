@@ -1,0 +1,193 @@
+!!!
+
+- if company_signed_in?
+  = render '/offers/company_header'
+- else user_signed_in?
+  = render '/offers/user_header'
+
+.contents
+  .contents__box
+    .main-contents
+      .main-contents__company
+        =image_tag "company1.jpg"
+        .main-contents__details
+          .main-contents__details__job
+            エンジニア
+          %h2.main-contents__details__title 仕組みを変えるのは面白い！JavaエンジニアWanted！
+          %p.main-contents__details__name
+            %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
+            %a{href: ""} 株式会社ABC
+          .main-contents__details__like
+            %a{href: ""}
+              %i.fa.fa-bullhorn
+  .contents__box
+    .main-contents
+      .main-contents__company
+        =image_tag "company2.jpg"
+        .main-contents__details
+          .main-contents__details__job
+            エンジニア
+          %h2.main-contents__details__title 仕組みを変えるのは面白い！RubyエンジニアWanted！
+          %p.main-contents__details__name
+            %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
+            %a{href: ""} 株式会社Cebu
+          .main-contents__details__like
+            %a{href: ""}
+              %i.fa.fa-bullhorn
+  .contents__box
+    .main-contents
+      .main-contents__company
+        =image_tag "company3.jpg"
+        .main-contents__details
+          .main-contents__details__job
+            エンジニア
+          %h2.main-contents__details__title 仕組みを変えるのは面白い！PHPエンジニアWanted！
+          %p.main-contents__details__name
+            %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
+            %a{href: ""} 株式会社America
+          .main-contents__details__like
+            %a{href: ""}
+              %i.fa.fa-bullhorn
+
+.recruitment-contents
+  .recruitment-contents__center
+    .recruitment-contents__center__left
+      .recruitment-contents__center__left__inner
+        .recruitment-contents__center__left__inner__menu
+          .menu-header
+            %h4 検索条件
+          .menu-contents
+            .job-form
+              %input#search{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "エンジニア", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+            .job-form
+              %input#search{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "中途採用", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+            .job-form
+              %input#search{:autocomplete => "off", :dir => "auto", :name => "q", :placeholder => "地域や特徴などの条件を追加", :spellcheck => "false", :style => "position: relative; vertical-align: top;", :type => "text"}/
+            .job-word
+              %ul
+                %li 秘書
+                %li アニメ
+                %li ブライダル
+                %li コンサルタント
+            .job-region
+              %h5 地域
+              %ul
+                %li 東京
+                %li 大阪
+                %li 沖縄
+                %li 北海道
+            .job-characteristics
+              %h5 特徴
+              %ul
+                %li TechCrunchに掲載実績あり
+                %li 海外進出している
+                %li 1億円以上の資金を調達済み
+                %li Wantedlyに初登場
+
+    .recruitment-contents__center__main
+      .recruitment-contents__center__main__menu
+        .recruitment-count 
+          %p 10/2509
+        .recruitment-status
+          %ul 
+            %li
+              %p 並べ替え
+            %li
+              %a{href: ""} おすすめ
+            %li
+              %a{href: ""} 新着
+            %li
+              %a{href: ""} 人気
+      .recruitment-contents__center__main__area
+        .recruitment-contents__center__main__area__company
+          =image_tag "company2.jpg"
+          .recruitment-contents__center__main__area__details
+            .recruitment-contents__center__main__area__details__job
+              エンジニア
+            %h2.recruitment-contents__center__main__area__details__title
+              sample
+            %p.recruitment-contents__center__main__area__details__message
+              sample
+            .recruitment-contents__center__main__area__details__name
+              .recruitment-contents__center__main__area__details__name__icon
+                %a{href: ""}
+                  %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
+              %p.recruitment-contents__center__main__area__details__name__text
+                %a{href: ""} sample
+              .recruitment-contents__center__main__area__details__name__like
+                %a{href: ""}
+                  %i.fa.fa-bullhorn
+
+        .recruitment-contents__center__main__area__company
+          =image_tag "company2.jpg"
+          .recruitment-contents__center__main__area__details
+            .recruitment-contents__center__main__area__details__job
+              エンジニア
+            %h2.recruitment-contents__center__main__area__details__title
+            %p.recruitment-contents__center__main__area__details__message
+            .recruitment-contents__center__main__area__details__name
+              .recruitment-contents__center__main__area__details__name__icon
+                %a{href: ""}
+                  %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
+              %p.recruitment-contents__center__main__area__details__name__text
+                %a{href: ""}
+              .recruitment-contents__center__main__area__details__name__like
+                %a{href: ""}
+                  %i.fa.fa-bullhorn
+
+        .recruitment-contents__center__main__area__company
+          =image_tag "company2.jpg"
+          .recruitment-contents__center__main__area__details
+            .recruitment-contents__center__main__area__details__job
+              エンジニア
+            %h2.recruitment-contents__center__main__area__details__title
+            %p.recruitment-contents__center__main__area__details__message
+            .recruitment-contents__center__main__area__details__name
+              .recruitment-contents__center__main__area__details__name__icon
+                %a{href: ""}
+                  %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
+              %p.recruitment-contents__center__main__area__details__name__text
+                %a{href: ""}
+              .recruitment-contents__center__main__area__details__name__like
+                %a{href: ""}
+                  %i.fa.fa-bullhorn
+.footer
+  .footer__contents
+    .footer__contents__left-contents
+      .footer__contents__left-contents__company-info
+        %h4 About
+        %ul
+          %li 東京
+          %li 大阪
+          %li 沖縄
+          %li samplesamplesample
+      .footer__contents__left-contents__company-products
+        .footer__contents__left-contents__company-products__left
+          %h4 Products
+          %ul
+            %li 東京
+            %li 大阪
+            %li 沖縄
+            %li samplesamplesample
+        .footer__contents__left-contents__company-products__right
+          %ul
+            %li 東京
+            %li 大阪
+            %li 沖縄
+            %li samplesamplesample
+      .footer__contents__left-contents__company-logo
+        =image_tag "footer-logo-wantedly.png"
+    .footer__contents__right-contents
+      .footer__contents__right-contents__lang
+        %h4 Langages
+        %ul
+          %li 英語
+          %li 日本語
+      .footer__contents__right-contents__message
+        %input#text{:name => "message",:placeholder => "wantedlyに意見を送る"}
+      .footer__contents__right-contents__send
+        %input#send{:type => "submit",:value => "送信"}
+
+
+
+

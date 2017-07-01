@@ -1,5 +1,5 @@
 .top-contents {
-  height: 750px;
+  height: 820px;
   width: 1440px;
   box-sizing: border-box;
   background-image: url("profile.jpg");
@@ -36,6 +36,15 @@
             font-size: 14px;
             text-align: center;
             padding-left: 20px;
+            cursor: pointer;
+            .hidden-menu {
+              height: 30px;
+              width: 200px;
+              display: none;
+              position: absolute;
+              right: 370px;
+              z-index: 2;
+            }
             a {
               color: #45494B;
               text-decoration: none;
@@ -83,7 +92,7 @@
         h1 {
           font-size: 50px;
           text-align: center;
-          line-height: 84px;
+          height: 84px;
         }
       }
       &__middle {

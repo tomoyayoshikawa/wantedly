@@ -10,7 +10,7 @@
   .field-right
     %ul
       %li
-        %a#header-sign_up{:href => "/users/sign_up"} 新規会員登録
+        %a#header-sign_up{:href => "/companies/sign_up"} 新規会員登録
       %li
         %a#header-recruiter{:href => ""} 採用担当者の方はこちら
       %li
@@ -29,7 +29,7 @@
         = f.label "パスワード"
         .field-input
           = f. password_field :password
-      %a.sentence{:href => "/user/password/new", :style => "font-size: 12px;"} パスワードを忘れた場合はこちら
+      %a.sentence{:href => "/company/password/new", :style => "font-size: 12px;"} パスワードを忘れた場合はこちら
       .actions
         = f.submit "ログイン", class: 'btn'
       .actions

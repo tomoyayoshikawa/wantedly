@@ -5,7 +5,7 @@
   .header__menu
     %ul
       %li
-        %a{href: ""} 募集を見る
+        %a{href: ""} 応募を見る
       %li
         %a{href: ""} フィードをみる
       %li
@@ -19,7 +19,7 @@
     %i.fa.fa-search
 
   .header__profile
-    %img.photo{:alt => "Wantedly", :height => "44px", :src => "/assets/man.png", :width => "44px", :margin => "0"}/
+    %img.photo{:alt => "Wantedly", :height => "44px", :src => "/assets/company.jpg", :width => "44px", :margin => "0"}/
     #modal-overlay
       .hidden-menu
         .hidden-menu__account
@@ -28,14 +28,14 @@
               %a.account-link
                 .name-area
                   .name-profile
-                    = current_user.name
+                    = current_company.company_name
                   .name-edit プロフィール編集
         .hidden-menu__visit
           %ul
             %li
-              %a.apply-visit{:href => "/users/#{current_user.id}"} 応募した企業
+              %a.apply-visit{:href => "/users/#{current_company.id}"} 投稿した企業
             %li
-              %a.apply-visit{:href => "/"} 保存した募集
+              %a.apply-visit{:href => "/"} 保存したユーザー
         .hidden-menu__user
           %ul
             %li

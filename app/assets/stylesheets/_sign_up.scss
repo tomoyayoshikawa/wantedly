@@ -1,4 +1,4 @@
-.header {
+.signUpHeader {
   width: 1440px;
   height: 60px;
   background-color: white;
@@ -49,20 +49,20 @@
             margin-top: 20px;
             position: relative;
           }
-          #user_user_name {
+          #user_name {
             border: 1px solid #D7DBDF;
             width: 282px;
             height: 35px;
             position: absolute;
             right: 150px;
-            bottom: 1px;
+            top: 70px;
           }
-          #campany_campany_name {
+          #company_company_name {
             border: 1px solid #D7DBDF;
             width: 282px;
             height: 35px;
             position: absolute;
-            right: 150px;
+            left: 155px;
             top: 70px;
           }
           #user_email {
@@ -73,7 +73,7 @@
             top: 140px;
             right: 150px;
           }
-          #campany_email {
+          #company_email {
             border: 1px solid #D7DBDF;
             width: 282px;
             height: 35px;
@@ -89,7 +89,7 @@
             top: 210px;
             right: 150px;
           }
-          #campany_password {
+          #company_password {
             border: 1px solid #D7DBDF;
             width: 282px;
             height: 35px;

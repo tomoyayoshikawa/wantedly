@@ -11,6 +11,4 @@ Rails.application.routes.draw do
   registrations: 'users/registrations'
   }
   root "offers#index"
-  resources :users, only: :index
-  resources :companies, only: :index
 end
