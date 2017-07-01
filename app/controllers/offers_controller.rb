@@ -1,4 +1,9 @@
 class OffersController < ApplicationController
-  def index
+  
+  def inex
   end
+
+  def new
+  end
+
 end
