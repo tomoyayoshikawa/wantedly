@@ -101,14 +101,20 @@
       .recruitment-contents__center__main__area
         - @offers.each do |offer|
           .recruitment-contents__center__main__area__company
-            = image_tag(offer.image) if offer.image
+            = link_to "/offers/#{offer.id}" do
+              %span 
+                = image_tag(offer.image) if offer.image
             .recruitment-contents__center__main__area__details
               .recruitment-contents__center__main__area__details__job
                 = offer.job
               %h2.recruitment-contents__center__main__area__details__title
-                = offer.title
+                = link_to "/offers/#{offer.id}" do
+                  %span
+                    = offer.title
               %p.recruitment-contents__center__main__area__details__message
-                = offer.thing
+                = link_to "/offers/#{offer.id}" do
+                  %span
+                    = offer.thing
               .recruitment-contents__center__main__area__details__name
                 .recruitment-contents__center__main__area__details__name__icon
                   %a{href: ""}
@@ -154,7 +160,4 @@
         %input#text{:name => "message",:placeholder => "wantedlyに意見を送る"}
       .footer__contents__right-contents__send
         %input#send{:type => "submit",:value => "送信"}
-
-
-
-
+        

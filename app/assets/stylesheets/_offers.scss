@@ -239,6 +239,9 @@
   height: 1000px;
   width: 1440px;
   background-color: $white;
+    a {
+      text-decoration: none;
+    }
   &__center {
     width: 890px;
     height: 1000px;
@@ -401,6 +404,9 @@
             width: 460px;
             overflow: hidden;
             text-overflow: ellipsis;
+            a {
+              color: black;
+            }
           }
           &__message {
             height: 60px;
