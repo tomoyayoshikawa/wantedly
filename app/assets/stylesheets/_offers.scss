@@ -4,13 +4,14 @@
   background-color: $white;
   box-sizing: border-box;
   border-bottom: solid 5px #DCDCDC;
+  padding: 0 5px 0 5px;
   &__logo {
     height: 65px;
     width: 60px;
     float: left;
     position: relative;
     left: 10px;
-    top: 10px
+    top: 10px;
   }
   &__menu {
     float: left;

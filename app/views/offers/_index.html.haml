@@ -99,58 +99,25 @@
             %li
               %a{href: ""} 人気
       .recruitment-contents__center__main__area
-        .recruitment-contents__center__main__area__company
-          =image_tag "company2.jpg"
-          .recruitment-contents__center__main__area__details
-            .recruitment-contents__center__main__area__details__job
-              エンジニア
-            %h2.recruitment-contents__center__main__area__details__title
-              sample
-            %p.recruitment-contents__center__main__area__details__message
-              sample
-            .recruitment-contents__center__main__area__details__name
-              .recruitment-contents__center__main__area__details__name__icon
-                %a{href: ""}
-                  %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
-              %p.recruitment-contents__center__main__area__details__name__text
-                %a{href: ""} sample
-              .recruitment-contents__center__main__area__details__name__like
-                %a{href: ""}
-                  %i.fa.fa-bullhorn
-
-        .recruitment-contents__center__main__area__company
-          =image_tag "company2.jpg"
-          .recruitment-contents__center__main__area__details
-            .recruitment-contents__center__main__area__details__job
-              エンジニア
-            %h2.recruitment-contents__center__main__area__details__title
-            %p.recruitment-contents__center__main__area__details__message
-            .recruitment-contents__center__main__area__details__name
-              .recruitment-contents__center__main__area__details__name__icon
-                %a{href: ""}
-                  %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
-              %p.recruitment-contents__center__main__area__details__name__text
-                %a{href: ""}
-              .recruitment-contents__center__main__area__details__name__like
-                %a{href: ""}
-                  %i.fa.fa-bullhorn
-
-        .recruitment-contents__center__main__area__company
-          =image_tag "company2.jpg"
-          .recruitment-contents__center__main__area__details
-            .recruitment-contents__center__main__area__details__job
-              エンジニア
-            %h2.recruitment-contents__center__main__area__details__title
-            %p.recruitment-contents__center__main__area__details__message
-            .recruitment-contents__center__main__area__details__name
-              .recruitment-contents__center__main__area__details__name__icon
-                %a{href: ""}
-                  %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
-              %p.recruitment-contents__center__main__area__details__name__text
-                %a{href: ""}
-              .recruitment-contents__center__main__area__details__name__like
-                %a{href: ""}
-                  %i.fa.fa-bullhorn
+        - @offers.each do |offer|
+          .recruitment-contents__center__main__area__company
+            = image_tag(offer.image) if offer.image
+            .recruitment-contents__center__main__area__details
+              .recruitment-contents__center__main__area__details__job
+                = offer.job
+              %h2.recruitment-contents__center__main__area__details__title
+                = offer.title
+              %p.recruitment-contents__center__main__area__details__message
+                = offer.thing
+              .recruitment-contents__center__main__area__details__name
+                .recruitment-contents__center__main__area__details__name__icon
+                  %a{href: ""}
+                    %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
+                %p.recruitment-contents__center__main__area__details__name__text
+                  %a{href: ""} sample
+                .recruitment-contents__center__main__area__details__name__like
+                  %a{href: ""}
+                    %i.fa.fa-bullhorn
 .footer
   .footer__contents
     .footer__contents__left-contents
