@@ -124,40 +124,5 @@
                 .recruitment-contents__center__main__area__details__name__like
                   %a{href: ""}
                     %i.fa.fa-bullhorn
-.footer
-  .footer__contents
-    .footer__contents__left-contents
-      .footer__contents__left-contents__company-info
-        %h4 About
-        %ul
-          %li 東京
-          %li 大阪
-          %li 沖縄
-          %li samplesamplesample
-      .footer__contents__left-contents__company-products
-        .footer__contents__left-contents__company-products__left
-          %h4 Products
-          %ul
-            %li 東京
-            %li 大阪
-            %li 沖縄
-            %li samplesamplesample
-        .footer__contents__left-contents__company-products__right
-          %ul
-            %li 東京
-            %li 大阪
-            %li 沖縄
-            %li samplesamplesample
-      .footer__contents__left-contents__company-logo
-        =image_tag "footer-logo-wantedly.png"
-    .footer__contents__right-contents
-      .footer__contents__right-contents__lang
-        %h4 Langages
-        %ul
-          %li 英語
-          %li 日本語
-      .footer__contents__right-contents__message
-        %input#text{:name => "message",:placeholder => "wantedlyに意見を送る"}
-      .footer__contents__right-contents__send
-        %input#send{:type => "submit",:value => "送信"}
-        
+                    
+= render '/offers/footer_index'
