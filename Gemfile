@@ -61,6 +61,7 @@ gem 'erb2haml'
 gem "font-awesome-rails"
 gem 'device'
 gem 'devise'
+gem 'carrierwave', '~> 1.0'
 
 group :production do
   gem 'unicorn'
