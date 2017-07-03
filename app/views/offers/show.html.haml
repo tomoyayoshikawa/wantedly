@@ -1,0 +1,6 @@
+!!!
+
+- if company_signed_in?
+  = render '/offers/company_header'
+- else user_signed_in?
+  = render '/offers/user_header'
