@@ -5,6 +5,7 @@
 - elsif user_signed_in?
   = render '/offers/index'
 - else
+  #modalrogIn-bg
   .top-contents
     .header
       .header__logo
@@ -25,9 +26,10 @@
         .header__menu__left
           %ul
             %li
-              ログイン
-              #modal-overlay
-                .hidden-menu
+              .rogIn　ログイン
+              #modal-rogIn
+                .rogIn-menu
+                  .close &times;
                   .hidden-menu__signIn
                     %ul
                       %li 
