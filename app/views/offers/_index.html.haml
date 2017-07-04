@@ -102,7 +102,7 @@
         - @offers.each do |offer|
           .recruitment-contents__center__main__area__company
             = link_to "/offers/#{offer.id}" do
-              %span 
+              %span
                 = image_tag(offer.image) if offer.image
             .recruitment-contents__center__main__area__details
               .recruitment-contents__center__main__area__details__job
@@ -120,9 +120,10 @@
                   %a{href: ""}
                     %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
                 %p.recruitment-contents__center__main__area__details__name__text
-                  %a{href: ""} sample
+                  %a{href: ""}
+                    = offer.company.company_name
                 .recruitment-contents__center__main__area__details__name__like
                   %a{href: ""}
                     %i.fa.fa-bullhorn
-                    
+
 = render '/offers/footer_index'
