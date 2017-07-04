@@ -75,6 +75,7 @@
   height: 1000px;
   width: 1440px;
   background-color: $white;
+  margin-bottom: 48px;
     a {
       text-decoration: none;
     }
@@ -283,132 +284,6 @@
               width: 100px;
             }
           }
-        }
-      }
-    }
-  }
-}
-.footer {
-  box-sizing: border-box;
-  height: 300px;
-  width: 1440px;
-  background-color: $white;
-  border-top: 1px solid $light-grey;
-  margin-top: 48px;
-  &__contents {
-    width: 1000px;
-    height: 300px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: $white;
-    &__left-contents {
-      width: 500px;
-      height: 300px;
-      box-sizing: border-box;
-      padding-right: 15px;
-      float: left;
-      &__company-info {
-        height: 200px;
-        width: 160px;
-        float: left;
-        box-sizing: border-box;
-        h4 {
-          padding-right: 15px;
-        }
-        ul {
-          list-style: none;
-          padding-right: 15px;
-          li {
-            padding-top: 10px;
-            font-size: 13px;
-          }
-        }
-      }
-      &__company-products {
-        height: 200px;
-        width: 320px;
-        float: left;
-        box-sizing: border-box;
-        &__left {
-          width: 160px;
-          height: 200px;
-          float: left;
-          box-sizing: border-box;
-          h4 {
-            padding-right: 15px;
-          }
-          ul {
-            list-style: none;
-            border-right: 1px solid $light-grey;
-            padding-right: 15px;
-            li {
-              padding-top: 10px;
-              font-size: 13px;
-            }
-          }
-        }
-        &__right {
-          width: 160px;
-          height: 200px;
-          float: left;
-          box-sizing: border-box;
-          ul {
-            list-style: none;
-            padding-top: 24px;
-            padding-left: 15px;
-            li {
-              padding-top: 10px;
-              font-size: 13px;
-            }
-          }
-        }
-      }
-      &__company-logo {
-        height: 100px;
-        width: 320px;
-        float: left;
-        img {
-          width: 200px;
-          margin: 0 auto;
-        }
-      }
-    }
-    &__right-contents {
-      width: 500px;
-      height: 300px;
-      box-sizing: border-box;
-      float: left;
-      &__lang {
-        width: 160px;
-        height: 200px;
-        padding-right: 15px;
-        float: left;
-        h4 {
-          font-weight: bold;
-        }
-        ul {
-          list-style: none;
-          li {
-            padding-top: 10px;
-            font-size: 13px;
-          }
-        }
-      }
-      &__message {
-        float: left;
-        #text {
-          height: 150px;
-          width: 300px;
-        }
-      }
-      &__send {
-        float: left;
-        #send {
-          margin-top: 10px;
-          text-align: center;
-          width: 300px;
         }
       }
     }
