@@ -5,6 +5,7 @@
 - elsif user_signed_in?
   = render '/offers/index'
 - else
+  #modalrogIn-bg
   .top-contents
     .header
       .header__logo
@@ -21,16 +22,16 @@
             %li
               %a{href: ""} 
                 %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
-        
         .header__menu__left
           %ul
             %li
-              ログイン
-              #modal-overlay
-                .hidden-menu
+              .rogIn ログイン
+              #modal-rogIn
+                .rogIn-menu
+                  .close &times;
                   .hidden-menu__signIn
                     %ul
-                      %li 
+                      %li
                         = link_to "ユーザー", new_user_session_path, class: 'user-menu'
                       %li
                         = link_to "採用担当者の方", new_company_session_path, class: 'user-menu'

@@ -1,9 +1,11 @@
 @import "./reset";
 @import "font-awesome";
 @import "./config/variable";
+@import "./header/";
+@import "./footer/";
 @import "./offers";
-@import "./companies";
-@import "./users";
+@import "./index";
 @import "./sign_up";
 @import "./sign_in";
 @import "./offers_new";
+@import "./offers_show";
