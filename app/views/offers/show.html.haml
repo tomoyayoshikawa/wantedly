@@ -66,16 +66,16 @@
         .show-contents__main__inner__body__sidebar
           .show-contents__main__inner__body__sidebar__inner
             .show-contents__main__inner__body__sidebar__inner__action
-              .show-contents__main__inner__body__sidebar__inner__action__btn
-                / - if current_user
-                .entry-btn.btn 話を聞きに行きたい
-              .show-contents__main__inner__body__sidebar__inner__action__text
-                %p.count 現在10人が応募しています。
-                %p 応募状況は、他のユーザーに公開されません。
-                %p さらに詳しく
-              .show-contents__main__inner__body__sidebar__inner__action__later
-                .later-btn
-                  = link_to "あとで見る","", class:'later'
+              - if current_user
+                .show-contents__main__inner__body__sidebar__inner__action__btn
+                  .entry-btn.btn 話を聞きに行きたい
+                .show-contents__main__inner__body__sidebar__inner__action__text
+                  %p.count 現在10人が応募しています。
+                  %p 応募状況は、他のユーザーに公開されません。
+                  %p さらに詳しく
+                .show-contents__main__inner__body__sidebar__inner__action__later
+                  .later-btn
+                    = link_to "あとで見る","", class:'later'
         .show-contents__main__inner__body__suggest
           .show-contents__main__inner__body__suggest__inner
   .show-contents__outer
