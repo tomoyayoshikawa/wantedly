@@ -63,6 +63,7 @@ gem 'device'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+gem 'pry-rails'
 
 group :production do
   gem 'unicorn'
