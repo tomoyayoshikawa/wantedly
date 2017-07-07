@@ -1,6 +1,84 @@
 !!!
+#modalApply-bg
+  .close &times;
+  #modal-rogIn
+    .apply-menu
+      .apply-menu__inner
+        .apply-menu__inner__title
+          あなたが興味を持っていることを担当者に伝えます。
+        .apply-menu__inner__contents
+          .apply-menu__inner__contents__explanation
+            %p どれくらい興味があるのか教えてください。
+          .apply-menu__inner__contents__select
+            .apply-menu__inner__contents__select__comment
+              .apply-menu__inner__contents__select__comment__label
+                %input{:name => "q1", :type => "radio", :value => "今すぐ一緒に働きたい"}今すぐ一緒に働きたい
+              .apply-menu__inner__contents__select__comment__label
+                %input{:name => "q1", :type => "radio", :value => "まずは話を聞いてみたい"}まずは話を聞いてみたい
+              .apply-menu__inner__contents__select__comment__label
+                %input{:name => "q1", :type => "radio", :value => "少しだけ興味があります"}少しだけ興味があります
+          .apply-menu__inner__contents__submit
+            .entry
+              .entry__button
+                =link_to "今すぐエントリー",""
 
 - if company_signed_in?
   = render '/offers/company_header'
 - else user_signed_in?
   = render '/offers/user_header'
+
+.show-contents
+  .show-contents__main
+    .show-contents__main__inner
+      .show-contents__main__inner__head
+        .show-contents__main__inner__head__top
+          .show-contents__main__inner__head__top__job
+            = @offer.job
+          .show-contents__main__inner__head__top__title
+            = @offer.title
+          .show-contents__main__inner__head__top__name
+            .show-contents__main__inner__head__top__name__icon
+              %a{href: ""}
+                %img.icon{:alt => "Wantedly", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg",}/
+            .show-contents__main__inner__head__top__name__text
+              = @offer.company.company_name
+        .show-contents__main__inner__head__cover
+          = image_tag(@offer.image) if @offer.image
+      .show-contents__main__inner__body
+        .show-contents__main__inner__body__column
+          .show-contents__main__inner__body__column__inner
+            .show-contents__main__inner__body__column__inner__what
+              %h3 なにをやっているのか
+              %p
+                = @offer.what
+            .show-contents__main__inner__body__column__inner__why
+              %h3 なぜやるのか
+              %p
+                = @offer.why
+            .show-contents__main__inner__body__column__inner__how
+              %h3 どうやっているのか
+              %p
+                = @offer.how
+            .show-contents__main__inner__body__column__inner__thing
+              %h3 こんなことをやります
+              %p
+                = @offer.thing
+        .show-contents__main__inner__body__sidebar
+          .show-contents__main__inner__body__sidebar__inner
+            .show-contents__main__inner__body__sidebar__inner__action
+              .show-contents__main__inner__body__sidebar__inner__action__btn
+                / - if current_user
+                .entry-btn.btn 話を聞きに行きたい
+              .show-contents__main__inner__body__sidebar__inner__action__text
+                %p.count 現在10人が応募しています。
+                %p 応募状況は、他のユーザーに公開されません。
+                %p さらに詳しく
+              .show-contents__main__inner__body__sidebar__inner__action__later
+                .later-btn
+                  = link_to "あとで見る","", class:'later'
+        .show-contents__main__inner__body__suggest
+          .show-contents__main__inner__body__suggest__inner
+  .show-contents__outer
+    .show-contents__outer__suggest
+
+= render '/offers/footer_index'
