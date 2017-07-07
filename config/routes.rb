@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   registrations: 'users/registrations'
   }
   root "offers#index"
-  resources :offers, only:[:index, :new, :create, :show]
+  resources :offers, only:[:index, :new, :create, :show] do
+    resources :apply, only: [:create]
+  end
 end
