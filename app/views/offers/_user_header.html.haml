@@ -32,7 +32,7 @@
         .hidden-menu__visit
           %ul
             %li
-              %a.apply-visit{:href => "/users/#{current_user.id}"} 応募した企業
+              =link_to "応募した企業", user_path(current_user.id), class: "apply-visit"
             %li
               %a.apply-visit{:href => "/"} 保存した募集
         .hidden-menu__user
