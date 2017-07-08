@@ -1,0 +1,31 @@
+!!!
+
+= render '/offers/company_header'
+
+.mypage
+  .mypage__main
+    .mypage__main__header
+      .user-icon
+        %img.photo{:alt => "Wantedly", :height => "44px", :src => "/assets/company.jpg", :width => "44px", :margin => "0"}/
+      .user-message メッセージ
+    .mypage__main__contents
+      .mypage__main__contents__left
+        .mypage__main__contents__left__header
+          %ul
+            %li.apply 応募
+            %li.message 非表示のメッセージ
+        .mypage__main__contents__left__list
+          %ul
+            %li
+              - @offers.each do |offer|
+                .company-name
+                  .company-name__icon
+                  .company-name__detail
+                    .company-name__detail__top
+                      = offer.company.company_name
+
+      .mypage__main__contents__right
+        .mypage__main__contents__right__title
+          %a.title 未経験歓迎！実践を通してスキルアップする、フロントエンドエンジニア
+        .mypage__main__contents__right__area
+        .mypage__main__contents__right__message
