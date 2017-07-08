@@ -20,7 +20,7 @@
           .apply-menu__inner__contents__submit
             .entry
               .entry__button
-                =link_to "今すぐエントリー",""
+                =link_to "今すぐエントリー", offer_applies_path(@offer), method: :post
 
 - if company_signed_in?
   = render '/offers/company_header'

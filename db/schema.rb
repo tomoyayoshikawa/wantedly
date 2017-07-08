@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170701080548) do
+ActiveRecord::Schema.define(version: 20170707034614) do
+
+  create_table "applies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "offer_id",   null: false
+    t.integer  "user_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["offer_id"], name: "index_applies_on_offer_id", using: :btree
+    t.index ["user_id"], name: "index_applies_on_user_id", using: :btree
+  end
 
   create_table "companies", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "company_name",                         default: "", null: false
@@ -69,5 +78,7 @@ ActiveRecord::Schema.define(version: 20170701080548) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "applies", "offers"
+  add_foreign_key "applies", "users"
   add_foreign_key "offers", "companies"
 end
