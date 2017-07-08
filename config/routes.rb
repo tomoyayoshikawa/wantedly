@@ -12,6 +12,6 @@ Rails.application.routes.draw do
   }
   root "offers#index"
   resources :offers, only:[:index, :new, :create, :show] do
-    resources :apply, only: [:create]
+    resources :applies, only:[:create]
   end
 end
