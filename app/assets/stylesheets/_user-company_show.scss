@@ -1,0 +1,126 @@
+.mypage {
+  width: 1440px;
+  height: 590px;
+  &__main {
+    width: 980px;
+    height: 590px;
+    margin: 0 auto;
+    &__header {
+      width: 980px;
+      height: 90px;
+      .user-icon {
+        width: 52px;
+        height: 52px;
+        margin-top: 20px;
+        margin-left: 20px;
+        float: left;
+      }
+      .user-message {
+        width: 890px;
+        height: 50px;
+        float: left;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #45494B;
+        line-height: 50px;
+        margin-left: 15px;
+      }
+    }
+    &__contents {
+      width: 980px;
+      height: 499px;
+      &__left {
+        width: 381px;
+        height: 501px;
+        float: left;
+        &__header {
+          width: 379px;
+          height: 41px;
+          margin: 0 auto;
+          ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            .apply {
+              width: 28px;
+              height: 40px;
+              font-size: 14px;
+              margin-top: 15px;
+              color: #7fdae7;
+              float: left;
+            }
+            .message {
+              font-size: 12px;
+              color: #9DA0A4;
+              float: right;
+              margin-top: 15px;
+              list-style: none;
+            }
+          }
+        }
+        &__list {
+          width: 379px;
+          height: 459px;
+          overflow-y: scroll;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+              width: 379px;
+              height: 109px;
+              .company-name {
+                width: 359px;
+                height: 88px;
+                margin-top: 20px;
+                &__icon {
+                  width: 50px;
+                  height: 50px;
+                  margin-left: 10px;
+                  background-color: #56b5c2;
+                  float: left;
+                }
+                &__detail {
+                  float: left;
+                  width: 285px;
+                  height: 80px;
+                  margin-left: 13px;
+                  &__top {
+                    font-size: 13px;
+                    line-height: 1;
+                    font-weight: 600;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &__right {
+        width: 599px;
+        height: 501px;
+        float: left;
+        &__title {
+          width: 599px;
+          height: 42px;
+          .title {
+            color: #00A4BB;
+            text-decoration: none;
+            font-size: 13px;
+            padding-left: 139px;
+          }
+        }
+        &__area {
+          width: 600px;
+          height: 307px;
+        }
+        &__message {
+          width: 600px;
+          height: 142px;
+          background: #f5f5f5;
+        }
+      }
+    }
+  }
+}
