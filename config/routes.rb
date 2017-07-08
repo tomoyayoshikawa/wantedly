@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   resources :offers, only:[:index, :new, :create, :show] do
     resources :applies, only:[:create]
   end
+  resources :users, only:[:show]
+  resources :companies, only: [:show]
 end
