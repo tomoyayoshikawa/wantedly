@@ -1,5 +1,5 @@
 class OffersController < ApplicationController
-  
+
   def index
     @offers = Offer.all.order("created_at DESC")
   end
@@ -10,9 +10,9 @@ class OffersController < ApplicationController
 
   def create
     @offer = Offer.new(offer_params)
-    if @offer.save
-      redirect_to offers_path
-    end
+      if @offer.save
+        redirect_to offers_path
+      end
   end
 
   def show
