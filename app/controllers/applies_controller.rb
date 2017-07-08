@@ -12,8 +12,8 @@ class AppliesController < ApplicationController
   end
 
   private
-  def apply_params
-    params.permit(:user_id, :offer_id)
-  end
-  
+    def apply_params
+      params.permit(:user_id, :offer_id)
+    end
+
 end
