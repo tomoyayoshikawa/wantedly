@@ -2,7 +2,7 @@
   height: 750px;
   width: 1440px;
   box-sizing: border-box;
-  background-image: url("profile.jpg");
+  background-image: image-url("profile.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,8 +14,8 @@
     width: 1440px;
     box-sizing: border-box;
     &__logo {
-      height: 10px;
-      width: 10px;
+      height: 150px;
+      width: 150px;
       float: left;
       position: relative;
       left: 10px;
@@ -36,6 +36,7 @@
             font-size: 14px;
             text-align: center;
             padding-left: 20px;
+            cursor: pointer;
             a {
               color: #45494B;
               text-decoration: none;
@@ -61,7 +62,7 @@
               top: 10px
             }
           }
-        }     
+        }
       }
     }
   }
