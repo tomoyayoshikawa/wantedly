@@ -1,70 +1,70 @@
-/ !!!
+!!!
 
-/ = render '/offers/company_header'
+= render '/offers/company_header'
 
-/ = form_for @offer do |f|
-/   .post-main
-/     .post-main__bar
-/       .post-main__bar__inner
-/         .post-main__bar__inner__section
-/           %ul
-/             %li.postArticle 新規募集作成
-/             #modalPost-content.post-menu
-/               .close &times;
-/               .post-menu__header
-/                 %ul#tabs
-/                   %li.step1 会社情報の入力
-/               .post-menu__job
-/                 .post-menu__job__form
-/                   .field-label
-/                     = f.label "職種"
-/                   .field-select
-/                     = f.text_field :job, placeholder: :職種を入力してください
-/                 .post-menu__job__title
-/                   .field-label
-/                     = f.label "タイトル"
-/                     %abbr (必須)
-/                   .field-text
-/                     = f.text_field :title, placeholder: :ユーザー6万人の人材サイトに喝を入れるwebデザイナー募集
-/               .post-menu__job__detail
-/                 .post-menu__job__detail__form
-/                   .field-label
-/                     = f.label "何をやっているのか"
-/                     %abbr (必須)
-/                   .field-detail
-/                     = f.text_field :what, placeholder: :募集要項の詳細を入力して下さい
-/                   .field-label
-/                     = f.label "なぜやっているのか"
-/                     %abbr (必須)
-/                   .field-detail
-/                     = f.text_field :why, placeholder: :募集要項の詳細を入力して下さい
-/                   .field-label
-/                     = f.label "どうやっているのか"
-/                     %abbr (必須)
-/                   .field-detail
-/                     = f.text_field :how, placeholder: :募集要項の詳細を入力して下さい
-/                   .field-label
-/                     = f.label "こんなことをやります"
-/                     %abbr (必須)
-/                   .field-detail
-/                     = f.text_field :thing, placeholder: :募集要項の詳細を入力して下さい
-/                 .post-menu__job__image
-/                   .post-menu__job__image__form
-/                     %p 会社イメージ(必須)
-/                     .field-label
-/                       = f.label :image do
-/                         #icon
-/                           = f.file_field :image, class: "field-image"
-/                         %i.fa.fa-picture-o
-/                 .post-menu__job__bottom
-/                   = f.submit "投稿する", class: "send-btn"
-/             %a{:href => "/"}
-/             %li.item ダッシュボード
-/             %li.item 募集
-/             %li.item フィード
-/             %li.item アナリティクス
-/             %li.item 候補者
-/             %li.item メッセージ
-/     .post-main__right
-/       #modalPost-bg.post-main__right__inner
+= form_for @offer do |f|
+  .post-main
+    .post-main__bar
+      .post-main__bar__inner
+        .post-main__bar__inner__section
+          %ul
+            %li.postArticle 新規募集作成
+            #modalPost-content.post-menu
+              .close &times;
+              .post-menu__header
+                %ul#tabs
+                  %li.step1 会社情報の入力
+              .post-menu__job
+                .post-menu__job__form
+                  .field-label
+                    = f.label "職種"
+                  .field-select
+                    = f.text_field :job, placeholder: :職種を入力してください
+                .post-menu__job__title
+                  .field-label
+                    = f.label "タイトル"
+                    %abbr (必須)
+                  .field-text
+                    = f.text_field :title, placeholder: :ユーザー6万人の人材サイトに喝を入れるwebデザイナー募集
+              .post-menu__job__detail
+                .post-menu__job__detail__form
+                  .field-label
+                    = f.label "何をやっているのか"
+                    %abbr (必須)
+                  .field-detail
+                    = f.text_field :what, placeholder: :募集要項の詳細を入力して下さい
+                  .field-label
+                    = f.label "なぜやっているのか"
+                    %abbr (必須)
+                  .field-detail
+                    = f.text_field :why, placeholder: :募集要項の詳細を入力して下さい
+                  .field-label
+                    = f.label "どうやっているのか"
+                    %abbr (必須)
+                  .field-detail
+                    = f.text_field :how, placeholder: :募集要項の詳細を入力して下さい
+                  .field-label
+                    = f.label "こんなことをやります"
+                    %abbr (必須)
+                  .field-detail
+                    = f.text_field :thing, placeholder: :募集要項の詳細を入力して下さい
+                .post-menu__job__image
+                  .post-menu__job__image__form
+                    %p 会社イメージ(必須)
+                    .field-label
+                      = f.label :image do
+                        #icon
+                          = f.file_field :image, class: "field-image"
+                        %i.fa.fa-picture-o
+                .post-menu__job__bottom
+                  = f.submit "投稿する", class: "send-btn"
+            %a{:href => "/"}
+            %li.item ダッシュボード
+            %li.item 募集
+            %li.item フィード
+            %li.item アナリティクス
+            %li.item 候補者
+            %li.item メッセージ
+    .post-main__right
+      #modalPost-bg.post-main__right__inner
 
