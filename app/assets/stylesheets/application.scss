@@ -1,6 +1,7 @@
 @import "./reset";
 @import "font-awesome";
 @import "./config/variable";
+@import "./modules/flash";
 @import "./header/";
 @import "./footer/";
 @import "./offers";
@@ -9,4 +10,4 @@
 @import "./sign_in";
 @import "./offers_new";
 @import "./offers_show";
-@import "./_user-company_show";
+@import "./user-company_show";

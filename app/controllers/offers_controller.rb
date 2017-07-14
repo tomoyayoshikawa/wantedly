@@ -11,7 +11,10 @@ class OffersController < ApplicationController
   def create
     @offer = Offer.new(offer_params)
       if @offer.save
-        redirect_to offers_path
+        redirect_to offers_path, notice: '投稿が完了しました'
+      else
+        flash.now[:alert] = '投稿に失敗しました。必須項目を入力の上、投稿してください。'
+        render :new
       end
   end
 
