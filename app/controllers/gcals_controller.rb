@@ -1,0 +1,2 @@
+class GcalsController < ApplicationController
+end
