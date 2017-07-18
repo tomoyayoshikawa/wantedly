@@ -16,4 +16,8 @@ Rails.application.routes.draw do
   end
   resources :users, only:[:show]
   resources :companies, only: [:show]
+  resources :gcals, only: [:index]
+  get 'events', to: 'events#events'
+  post 'events/create', to: 'events#create'
+  post 'events/update', to: 'events#update'
 end

@@ -63,6 +63,8 @@ gem 'device'
 gem 'devise'
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 gem 'pry-rails'
 gem 'fog'
 

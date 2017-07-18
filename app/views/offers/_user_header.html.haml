@@ -48,6 +48,9 @@
   .header__status
     %ul
       %li
+        = link_to gcals_path(current_user.id) do
+          %i.fa.fa-calendar-o
+      %li
         %a{href: ""}
           %i.fa.fa-commenting-o
       %li

@@ -1,0 +1,9 @@
+!!!
+
+- if user_signed_in?
+  = render '/offers/user_header'
+.calBody
+  %h1 Calendar
+  -if user_signed_in?
+    =current_user.name
+  #calendar
