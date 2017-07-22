@@ -9,24 +9,24 @@
   - @offers.shuffle.first(5).each do |offer|
     .contents__box
       .main-contents
-        .main-contents__company
+        .main-contents__company.img-block
           = link_to "/offers/#{offer.id}" do
             %span
               = image_tag(offer.image) if offer.image
-          .main-contents__details
-            .main-contents__details__job
-              = offer.job
-            %h2.main-contents__details__title
-              = link_to "/offers/#{offer.id}" do
-                %span
-                  = offer.title
-            %p.main-contents__details__name
-              %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
-              %a{href: ""} 
-                = offer.company.company_name
-            .main-contents__details__like
-              %a{href: ""}
-                %i.fa.fa-bullhorn
+        .main-contents__details
+          .main-contents__details__job
+            = offer.job
+          %h2.main-contents__details__title
+            = link_to "/offers/#{offer.id}" do
+              %span
+                = offer.title
+          %p.main-contents__details__name
+            %img.icon{:alt => "Wantedly", :height => "44px", :src => "https://de7iszmjjjuya.cloudfront.net/assets/wantedly-logo-5906d9a368d0bcdd2919553127357d4d.svg", :width => "44px", :margin => "0"}/
+            %a{href: ""} 
+              = offer.company.company_name
+          .main-contents__details__like
+            %a{href: ""}
+              %i.fa.fa-bullhorn
   .slick-dots
 
 .recruitment-contents

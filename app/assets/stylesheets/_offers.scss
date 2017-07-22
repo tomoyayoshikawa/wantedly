@@ -16,13 +16,21 @@
       a {
                 text-decoration: none;
       }
-      &__company {
+      &__company{
         box-sizing: border-box;
+        overflow: hidden;
+        transition: 0.25s;
         img {
           height: 260px;
           width: 100%;
-          }
         }
+        img:hover {
+            -moz-transform: scale(1.1,1.1);
+            -webkit-transform: scale(1.1,1.1);
+            -o-transform: scale(1.1,1.1);
+            -ms-transform: scale(1.1,1.1);
+          }
+      }
       &__details {
         height: 155px;
         width: 100%;
